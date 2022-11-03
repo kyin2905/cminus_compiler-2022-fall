@@ -9,26 +9,26 @@ extern int fileno (FILE *__stream) __THROW __wur;
 #define YYTOKENTYPE
 typedef enum cminus_token_type {
     //运算
-    ADD = 259,
-    SUB = 260,
-    MUL = 261,
-    DIV = 262,
-    LT = 263,
-    LTE = 264,
-    GT = 265,
-    GTE = 266,
-    EQ = 267,
-    NEQ = 268,
-    ASSIN = 269,
+    ADD = 259,// +
+    SUB = 260,// -
+    MUL = 261,// *
+    DIV = 262,// /
+    LT = 263,// <
+    LTE = 264,// <=
+    GT = 265,// >
+    GTE = 266,// >=
+    EQ = 267,// ==
+    NEQ = 268,// !=
+    ASSIN = 269,// =
     //符号
-    SEMICOLON = 270,
-    COMMA = 271,
-    LPARENTHESE = 272,
-    RPARENTHESE = 273,
-    LBRACKET = 274,
-    RBRACKET = 275,
-    LBRACE = 276,
-    RBRACE = 277,
+    SEMICOLON = 270,// ;
+    COMMA = 271,// ,
+    LPARENTHESE = 272,// (
+    RPARENTHESE = 273,// )
+    LBRACKET = 274,// [
+    RBRACKET = 275,// ]
+    LBRACE = 276,// {
+    RBRACE = 277,// }
     //关键字
     ELSE = 278,
     IF = 279,
@@ -38,16 +38,16 @@ typedef enum cminus_token_type {
     VOID = 283,
     WHILE = 284,
     //ID和NUM
-    IDENTIFIER = 285,
-    INTEGER = 286,
-    FLOATPOINT = 287,
-    ARRAY = 288,
-    LETTER = 289,
+    IDENTIFIER = 285,// 变量名
+    INTEGER = 286, // 整型
+    FLOATPOINT = 287,// 浮点型
+    ARRAY = 288,// 数组
+    LETTER = 289,// 单个字母
     //others
-    EOL = 290,
-    COMMENT = 291,
-    BLANK = 292,
-    ERROR = 258
+    EOL = 290,// 换行符 
+    COMMENT = 291,// 注释 
+    BLANK = 292,// 空格
+    ERROR = 258// 错误
 
 } Token;
 
